@@ -1,0 +1,115 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.mainBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.chessBoard{
+    background: rgb(240, 159, 102);
+    height: 90%;
+    width: 70%;
+    display: grid;
+    place-items: center;
+}
+.sub-main{
+    border: 5px solid black;
+    height: 90%;
+    width: 90%;
+    background-color: rgb(240, 159, 102);
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 30px 1fr 30px;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blue; */
+    grid-column-start: 3;
+    grid-row-end: 3;
+  }
+  .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: red; */
+    grid-column-start: 2;
+    grid-column-end: 3; 
+  }
+  .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 159, 102);
+    grid-row-start: 2;
+    grid-column-end: 3;
+    /* place-self: center; */
+  }
+  .left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: indigo; */
+    grid-row-start: 2;
+    grid-column-end: 2;
+  }
+  .bottom{
+    /* background-color: lime; */
+    grid-row-start: 3;
+    grid-column-end: 3;
+  }
+  .number{
+    height: 100%;
+    /* width: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .alphabet{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .number .num{
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  .alphabet .alp{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  .chessBox{
+    border: 4px solid black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-self: center;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .smallBox-white{
+    /* background-color: 4px solid rgb(240, 159, 102); */
+    
+  }
+  .smallBox-black{
+    background-color: black;
+  }
