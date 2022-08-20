@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --special-color: rgb(112,112,200);
+    --black-color: #111;
+    --white-color: #fff;
+    --background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+
+    /* --background-color: #111;
+    --black-color: #fff;
+    --white-color: #111; */
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+}
+/* ============================code========================================= */
+.code-section{
+    
+      background: var(--background-color);
+     display: flex;
+     flex-direction: column;
+     /* justify-content: end; */
+     align-items: center;
+     min-height: 100vh;
+     width: 100%;
+ }
+ .code-section input{
+    background-color: rgb(39, 37, 37);
+    padding: 0 30px;
+    margin: 30px 0;
+    width: 30%;
+    height: 40px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    font-size: 19px;
+ }
+ .code-section ol{
+     display: flex;
+     flex-direction: column;
+     margin-top: 100px;
+     margin-bottom: 50px;
+     align-items: center;
+ }
+ .code-section ol h2{
+     color: var(--black-color);
+     width: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     padding-left: 30px;
+     padding-right: 30px;
+     text-align: justify;
+ }
+ /* .code-section ol p{
+     margin-top: 20px;
+     padding-left: 30px;
+     padding-right: 30px;
+     text-align: justify;
+ } */
+ .code-section .language-c{
+     margin-top: 15px;
+     height: 45vh;
+     width: 70vw;
+     padding: 2px 50px;
+ }
+ 
+ /* for copy button................ */
+ .toolbar-item button{
+     cursor: pointer; 
+    color: #fff !important;
+     border: 1px solid var(--special-color) !important;
+     border-radius: 15px !important;
+     padding: 0px 14px !important;
+ }
+ .toolbar-item .copy-to-clipboard-button{
+     margin-right: 14px;
+     margin-top: 18px;
+ }
+
+
+ /* =========================================================================================== */
+.container{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--background-color);
+}
+.container a{
+    margin-top: 20px;
+    width: 75px;
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+/* .container #btnC::after{
+    content: "";
+    position: absolute;
+    background-color: #111;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    /* bottom: 0px; 
+}*/
+/* .container a:hover::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+} */
+.container a:hover{
+    color: black !important;
+    font-weight: bolder;
+}
+.container a:active{
+    color: #111;
+}
+
+.line{
+    border: 1px solid rgb(175, 174, 174);
+    display: block;
+}
+img{
+    outline: none;
+    height: 40px;
+    width: 50px;
+}
+
+.code-sectionJs{
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.code-sectionJs input{
+    background-color: rgb(39, 37, 37);
+    padding: 0 30px;
+    margin: 30px 0;
+    width: 30%;
+    height: 40px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    font-size: 19px;
+ }
+.code-sectionJs ol{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.code-sectionJs ol h2{
+    color: var(--black-color);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+.code-sectionJs .language-js{
+    /* border: 2px solid red; */
+    margin-top: 15px;
+    height: 45vh;
+    width: 70vw;
+    padding: 2px 50px;
+}
