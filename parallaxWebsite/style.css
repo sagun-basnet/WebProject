@@ -1,0 +1,60 @@
+:root{
+    --firstDiv-image: url(images/tan-kaninthanond-iwqJtQUgqAc-unsplash.jpg);
+    --secondDiv-image: url(images/anatoliy-gromov-o7fpEKG6W6U-unsplash.jpg);
+    --thirdDiv-image: url(images/levi-meir-clancy-WSa__Tp7hY4-unsplash.jpg);
+    --text-color: #fff;
+    --textBg-color: #111;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.firstdiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), var(--firstDiv-image);
+    width: 100%;
+    height: 750px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.seconddiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 750px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), var(--secondDiv-image);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.thirddiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 750px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), var(--thirdDiv-image);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* border-radius: 10%; */
+}
+.firstdiv h2,
+.seconddiv h2,
+.thirddiv h2{
+    color: var(--text-color);
+    /* background-color: rgba(0,0,0,0.4; */
+    margin-top: 100px;
+}
+.firstPara, .secondPara, .thirdPara{
+    background-color: var(--textBg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstPara p, .secondPara p, .thirdPara p{
+    color: var(--text-color);
+    width: 75%;
+    text-align: justify;
+}
